@@ -56,9 +56,7 @@ private:
 int main()
 {
 	std::unique_ptr<RequestProjectIP> pRequestIP_real = std::make_unique<RequestProjectIP>();
-	//std::unique_ptr<Proxy> pRequestIP_proxy = std::make_unique<Proxy>(new Proxy());
 	std::unique_ptr<Proxy> pRequestIP_proxy = std::make_unique<Proxy>(std::unique_ptr<RequestProjectIP>());
-	//std::unique_ptr<Proxy> pRequestIP_proxy(std::unique_ptr<RequestProjectIP>);
 	pRequestIP_real->RequestIP();
 	pRequestIP_proxy->RequestIP();
 }
