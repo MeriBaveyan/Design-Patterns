@@ -1,6 +1,5 @@
 #include <iostream>
 #include <memory>
-//#include <string>
 
 class RequestProjectIP;
 class Proxy;
